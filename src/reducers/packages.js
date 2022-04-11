@@ -5,7 +5,9 @@ const packagesSlice = createSlice({
     initialState: {
         packageArr: [],
       selectedPkgArr:[],
-      amount:0
+      amount:0,
+      pkgToBuy:[]
+
     },
     reducers: {
     
@@ -16,6 +18,7 @@ const packagesSlice = createSlice({
      addToSelected(state, action) {
         //ok
        state.selectedPkgArr.push(action.payload);
+
      },
      discardPkg(state, action) {
         //ok

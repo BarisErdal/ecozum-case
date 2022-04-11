@@ -1,7 +1,7 @@
-import { Button, List, Row, Typography } from 'antd'
+import { Button, Card, Divider, List, Row, Typography } from 'antd'
 import React from 'react'
 
-const ListPackages = ({title, onClick,btnName,data}) => {
+const ListPackages = ({title,data,totalAmount}) => {
   
     const { Text } = Typography;
   
@@ -18,9 +18,9 @@ renderItem={(pkg)=> <List.Item>
 <Text>{`${pkg.name}: ${pkg.amount}${pkg.currency}`}</Text>
 </List.Item>}
 />
+<Divider/>
+<Text>{`Toplam: ${totalAmount}`}</Text>
 
-
-<Button onClick={onClick} type="primary">{btnName}</Button>
     </div>
   )
 }
