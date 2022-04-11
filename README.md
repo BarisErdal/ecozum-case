@@ -1,3 +1,13 @@
+# API'de tam test edilemedi.
+# CSS üzerinde hala çalışıyorum.
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
